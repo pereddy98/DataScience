@@ -1,0 +1,197 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+\usepackage{url}
+\urldef{\mailsa}\path|{aashray.arora,paidivarsha.mohan,sravanthi.pereddy,udit.gupta}@cs.stonybrook.edu|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+\newcommand{\swallow}[1]{ }
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Status Report: Team 7\\
+Ghoul Pool}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{Ghoul Pool}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{Aashray Arora \and Varsha Paidi \and Sravanthi Pereddy \and Udit Gupta}
+%
+\authorrunning{Aashray Arora \and Varsha Paidi \and Sravanthi Pereddy \and Udit Gupta}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{Department of Computer Science, Stony Brook University,\\
+Stony Brook, NY 11794-4400\\
+\mailsa\\
+\url{http://www.cs.stonybrook.edu/~skiena/591/projects}}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+\toctitle{Lecture Notes in Computer Science}
+\tocauthor{Authors' Instructions}
+\maketitle
+
+\swallow{   % DO NOT BOTHER WITH THIS
+\begin{abstract}
+The abstract should summarize the contents of the paper and should
+contain at least 70 and at most 150 words. It should be written using the
+\emph{abstract} environment.
+\keywords{We would like to encourage you to list your keywords within
+the abstract section}
+\end{abstract}
+}
+
+
+\section{Background Updates} 
+State your challenge, and summarize any new literature, data set and images/video you have encountered since the progress report.  (2 min / 2 pages)
+
+\subsection{Challenge}
+
+Our challenge is to predict/model the risks of people dying. Given a set of 32 personalities, the goal is to predict the probability of death for each of the personalities. The personality with the highest probability of death, has higher chances of kicking the bucket first.To achieve this, our initial baseline model assigned the probability of death from Life Tables to each of the personalities based on their respective current age and gender. From the assigned probabilities, predictions were made as to which celebrity would have kicked the bucket first.
+
+Initial baseline model was completely modeled around the probability of death obtained from World Health Organization Life Table.What is a Life Table? It is a table which shows for each age, what the probability is that a person of that age and gender will die before his or her next birthday.[1- cite wikipedia source] It also depicts the survivorship and life expectancy for people at different ages.
+
+
+Initially, World Health Organization(WHO) Life Tables were considered to obtain the probability of death and for the evaluation of the Life Tables. But they were inappropriate for our baseline model and hence for the evaluation of the Life Tables. This is because the WHO Life Tables gave importance to smaller age population than the population at higher age range. The probabilities assigned to people above 100 years of age is 1 which is to some extent ambiguous. While this was not the case for Social Security Administration(SSA) Life Tables. Hence the SSA Life Tables are appropriate for model and the evaluation of Life Tables.
+
+-- How the evaluation is don
+
+New data set?
+
+
+\section{Data Matrices}
+
+Report on the size (number of rows) and composition (descriptions of the columns) of the data matrices you have assembled to build your models from.  Where did the data come from, and how satisfied are you with what you have for your project? 
+(3 minutes / 3 pages)
+
+The data matrices we have assembled have XXXX rows. This data has come from many of the possible data sources we mentioned in 
+our background report. We have used Freebase, Wikipedia and NNDB to collect our final dataset. Freebase collects it's data from source 
+like Wikipedia, youtube, biographies,etc [Aashray : need to mention a lot more here]. Freebase is now a Google company. We built a data scrapper 
+that collects our data for us. We wrote a data scrapper that collects the personality IDs of all persons from Freebase and then we collect 
+various details of each person given this person ID like age, date of birth, date of death (if dead), birth country, etc [Aashray : need to mention this more accurately]. 
+
+We are quite satisfied with our data set, he have used an apt source given our project domain and the data set is large enough for us sample and develop an accurate model.
+
+[Aashray : haha.. 3 pages]??
+
+\section{Development/Evaluation Environment}
+
+Report on the block structure of your development/evaluation environment, with what statistics you are reporting to demonstrate the performance of your various model.  Show screenshots/output traces so we can see what you are getting from your environment. (5 minutes / 2-3 pages)
+
+
+\section{Current Model and Baseline}
+
+describe your current (presumably machine learning-based) model, and present results from your evaluation environment showing the performance of it against your baseline models. What methods of fitting/data analysis are you using? (5 minutes, 3-5 pages)
+
+
+\section{Current Prediction and Next Steps}
+
+State your current forecast for your challenge. Present what you will do next to get a complete predictive model.  Discuss any difficulties you will have to overcome in building a good model   (4 min / 2-3 pages)
+
+
+
+
+\subsubsection*{Acknowledgments.} Here acknowledge any other people who helped with this project.
+
+\section{Bibliography}\label{references}
+
+The correct BibTeX entries for the Lecture Notes in Computer Science
+volumes can be found at the following Website shortly after the
+publication of the book:
+\url{http://www.informatik.uni-trier.de/~ley/db/journals/lncs.html}
+
+For citations in the text please use
+square brackets and consecutive numbers: \cite{jour}, \cite{lncschap},
+\cite{proceeding1} -- provided automatically
+by \LaTeX 's \verb|\cite| \dots\verb|\bibitem| mechanism.
+
+Please base your references on the
+examples below. 
+The following section shows a sample reference list with entries for
+journal articles \cite{jour}, an LNCS chapter \cite{lncschap}, a book
+\cite{book}, proceedings without editors \cite{proceeding1} and
+\cite{proceeding2}, as well as a URL \cite{url}.
+Please note that proceedings published in LNCS are not cited with their
+full titles, but with their acronyms!
+
+\begin{thebibliography}{4}
+
+\bibitem{jour} Smith, T.F., Waterman, M.S.: Identification of Common Molecular
+Subsequences. J. Mol. Biol. 147, 195--197 (1981)
+
+\bibitem{lncschap} May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline:
+Composing a Complex Biological Workflow through Web Services. In: Nagel,
+W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128,
+pp. 1148--1158. Springer, Heidelberg (2006)
+
+\bibitem{book} Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing
+Infrastructure. Morgan Kaufmann, San Francisco (1999)
+
+\bibitem{proceeding1} Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid
+Information Services for Distributed Resource Sharing. In: 10th IEEE
+International Symposium on High Performance Distributed Computing, pp.
+181--184. IEEE Press, New York (2001)
+
+\bibitem{proceeding2} Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the
+Grid: an Open Grid Services Architecture for Distributed Systems
+Integration. Technical report, Global Grid Forum (2002)
+
+\bibitem{url} National Center for Biotechnology Information, \url{http://www.ncbi.nlm.nih.gov}
+
+\end{thebibliography}
+
+
+
+\section{Checklist of Items to be Submitted for Project Background Report}
+Here is a checklist of everything the volume editor requires from you:
+
+
+\begin{itemize}
+\settowidth{\leftmargin}{{\Large$\square$}}\advance\leftmargin\labelsep
+\itemsep8pt\relax
+\renewcommand\labelitemi{{\lower1.5pt\hbox{\Large$\square$}}}
+
+\item The final \LaTeX{} source files
+\item A final PDF file
+\item A video file with 15-20 minutes footage since the back reel.
+\item A link to this file up loaded to YouTube.
+\item The powerpoint file you created for your presentation.
+\end{itemize}
+\end{document}

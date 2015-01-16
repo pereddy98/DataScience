@@ -1,0 +1,33 @@
+NAME,GENDER,AGE,COUNTRY,PROBABILITY OF DEATH,CONTINENT
+Robert Mugabe,Male,90,Zimbabwe,0.847,Africa
+Helmut Schmidt,Male,96,Germany,0.817,Europe
+Zsa Zsa Gabor,Female,97,Austria,0.814,Europe
+Rev. Billy Graham,Male,96,United States,0.811,Americas
+Kirk Douglas,Male,98,United States,0.811,Americas
+Henry Kissinger,Male,91,Germany,0.688,Europe
+George Herbert Walker Bush,Male,90,United States,0.68,Americas
+Jimmy Carter,Male,90,United States,0.68,Americas
+John Glenn,Male,93,United States,0.68,Americas
+Abe Vigoda,Male,93,United States,0.68,Americas
+Shimon Peres,Male,91,Poland,0.656,Europe
+Olivia De Havilland,Female,98,Japan,0.649,Asia
+Doris Day,Female,90,United States,0.594,Americas
+Lee Kuan Yew,Male,91,Singapore,0.537,Asia
+Pope Benedict XVI,Male,87,Germany,0.492,Europe
+Hosni Mubarak,Male,86,Egypt,0.485,Africa
+Fats Domino,Male,86,United States,0.485,Americas
+Dick Van Dyke,Male,89,United States,0.485,Americas
+B.B. King,Male,89,United States,0.485,Americas
+Chuck Berry,Male,87,United States,0.485,Americas
+Fidel Castro,Male,88,Cuba,0.458,Americas
+Queen Elizabeth II,Female,88,United Kingdom,0.381,Europe
+Charles Manson,Male,80,United States,0.318,Americas
+Clint Eastwood,Male,84,United States,0.318,Americas
+Ali Khamenei,Male,75,Iran,0.295,Asia
+Rupert Murdoch,Male,83,Australia,0.283,Australia
+Jerry Lee Lewis,Male,79,United States,0.206,Americas
+Dick Cheney,Male,73,United States,0.137,Americas
+Mick Jagger,Male,71,United States,0.137,Americas
+Keith Richards,Male,71,United States,0.137,Americas
+Stephen Hawking,Male,72,United Kingdom,0.123,Europe
+Bashar Al-Assad,Male,49,Syria,0.038,Asia
